@@ -16,11 +16,13 @@
 
         <version.plugin.maven.compiler>3.11.0</version.plugin.maven.compiler>
         <version.plugin.maven.surefire>3.0.0-M9</version.plugin.maven.surefire>
-             
+
         <version.depenency.junit>5.9.2</version.depenency.junit>
         <version.depenency.assertj.core>3.24.2</version.depenency.assertj.core>
         <version.depenency.system.rules>1.19.0</version.depenency.system.rules>
         <version.depenency.lombok>1.18.26</version.depenency.lombok>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
     <dependencies>
@@ -62,6 +64,10 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${version.plugin.maven.compiler}</version>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
